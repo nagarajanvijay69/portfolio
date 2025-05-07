@@ -169,7 +169,8 @@
 @media (max-width : 450px) {
      .ani-about-head span {
           left: 5%;
-          font-size: 30px;
+          font-size: 28px;
+          width: 100%;
      }
 
      .about .pro-link-1, .about .pro-link{
