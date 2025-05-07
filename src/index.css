@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  height: 100dvh;
+  font-family: 'outfit';
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.heading {
+  font-family: 'dm serif display';
+}

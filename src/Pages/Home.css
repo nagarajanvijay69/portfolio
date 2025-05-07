@@ -1,0 +1,91 @@
+.home{
+     padding-top: 65px;
+     height: 100dvh;
+     width: 100dvw;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     gap: 10px;
+     z-index: 1;
+}
+
+.home img{
+     height: 230px;
+     border-radius: 50%;
+     position: relative;
+     top : -3%
+}
+
+.home span{
+     position: relative;
+}
+
+.home .one{
+     font-size: 40px;
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.home .two{
+     font-size: 35px;
+}
+
+.home .three{
+     font-size: 20px;
+}
+
+.nav-btn{
+     margin-top: 30px;
+     display: inline-flex;
+     gap: 10px;
+}
+
+.nav-link{
+     text-decoration: none;
+     color: white;
+     height: 30px;
+     width: 110px;
+     border-radius: 10px;
+}
+
+.nav-1{
+     height: 32px;
+     width: 112px;
+     padding-top: 6.5px;
+     background : linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     transition: transform 0.2s ease-in-out;
+}
+
+.nav-1:hover{
+     background : linear-gradient(45deg, rgb(255, 106, 0), rgb(213, 9, 121));
+}
+
+.nav-2{
+     padding-top: 6.5px;
+     border: 2px white solid;
+}
+
+.nav-2:hover{
+     border: 2px rgb(114, 111, 111) solid;
+}
+
+@media (max-width : 600px) {
+     .home{
+          padding-top: 0;
+     }
+
+
+     .nav-btn{
+         position: relative;
+         top: 40px;
+     }
+
+     .three{
+          position: relative;
+          top: 20px; 
+     }
+}

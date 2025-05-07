@@ -1,0 +1,191 @@
+.contact{
+     min-height: 100dvh;
+     width: 100dvw;
+     padding-top: 65px;
+     display: flex;
+     flex-direction: column;
+     z-index: 1;
+}
+
+.contact-div{
+     display: flex;
+     gap: 5%;
+     margin: 10px 20px;
+}
+
+.contact-left{
+     width: 45%;
+}
+
+.contact-right{
+     width: 45%;
+     position: relative;
+     left: 20px;
+}
+
+.contact-head{
+     margin: 20px 0;
+     text-align: center;
+     font-size: 30px;
+}
+
+.left-head{
+     text-align: center;
+     font-size: 30px;
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin: 20px 0;
+}
+
+.left-para{
+     text-align: center;
+     font-size: 20px;
+}
+
+.contact ul{
+     margin-top: 50px;
+     list-style: none;
+     gap: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.contact ul li span{
+     position: relative;
+     top: -15px;
+     padding-left: 20px;
+     font-size: 20px;
+}
+
+
+.contact a{
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+}
+
+.contact img{
+     height: 40px;
+}
+
+
+.contact-text{
+     font-size: 18px;
+}
+
+
+.contact-form{
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+
+.contact-form label{
+     font-size: 20px;
+}
+
+.right-head{
+     text-align: center;
+     font-size: 30px;
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin: 20px 0;
+}
+
+.contact-form input{
+     height: 40px;
+     width: 90%;
+     background-color: rgb(39, 36, 36);
+     color: white;
+     border: none;
+     font-family: 'outfit';
+     padding: 0 10px;
+     font-size: 19px;
+}
+
+.contact-form input:-webkit-autofill{
+     -webkit-box-shadow : 0 0 0 1000px rgb(39, 36, 36) inset !important;
+     -webkit-text-fill-color: #ffffff !important;
+}
+
+.contact-form input:focus{
+     outline: none;
+}
+
+.contact-form textarea:-webkit-autofill{
+     -webkit-box-shadow : 0 0 0 1000px rgb(39, 36, 36) inset !important;
+     -webkit-text-fill-color: #ffffff !important;
+}
+
+.contact textarea{
+     height: 180px;
+     width: 90%;
+     background-color: rgb(39, 36, 36);
+     color: rgb(255, 255, 255);
+     border: none;
+     font-family: 'outfit';
+     padding: 10px 10px;
+     font-size: 19px;
+     resize: none;
+}
+
+.contact textarea:-webkit-autofill{
+     -webkit-text-fill-color: inherit !important;
+}
+
+.contact-form textarea:focus{
+     outline: none;
+}
+
+
+.contact-submit{
+     height: 35px;
+     width: 120px;
+     border-radius: 10px;
+     border: none;
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     color: white;
+     transition: transform 0.2s ease-in-out;
+}
+
+.contact-submit:hover{
+     transform: scale(1.03);
+}
+
+
+@media (max-width : 1024px) {
+     .contact-left{
+          width: 100%;
+          margin-bottom: 100px;
+     }
+     
+     .contact-right{
+          width: 100%;
+     }
+
+     .contact-div{
+          flex-direction: column;
+     }
+}
+
+
+@media (max-width : 500px) {
+     .contact-left{
+          width: 100%;
+          margin-bottom: 50px;
+     }
+
+     .contact-right{
+          margin-bottom: 50px;
+     }
+
+     .right-head{
+          position: relative;
+          right: 15px;
+     }
+}

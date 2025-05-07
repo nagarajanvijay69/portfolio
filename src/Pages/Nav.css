@@ -1,0 +1,154 @@
+.navbar {
+     height: 65px;
+     width: 100dvw;
+     display: inline-flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: rgb(26, 23, 23);
+     z-index: 5;
+     transition: position, opacity, display, position 0.3s ease-out;
+}
+
+.navbar span {
+     font-size: 25px;
+     margin-left: 25px;
+     transition: color 0.3s ease-in-out;
+}
+
+.navbar span:hover {
+     color: rgb(73, 63, 63);
+}
+
+.navbar .list {
+     list-style: none;
+     display: inline-flex;
+     gap: 40px;
+     margin-right: 7%;
+     transition: display, opacity, position 0.3s ease-in-out;
+     opacity: 1;
+}
+
+.special-list{
+     display: flex;
+     list-style: none;
+     gap: 40px;
+}
+
+.navbar ul li a {
+     color: white;
+     text-decoration: none;
+     font-size: 17px;
+     transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+     color: rgb(73, 63, 63);
+}
+
+.nav-title {
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.navbar img {
+     display: none;
+     height: 40px;
+     width: 40px;
+     position: absolute;
+     right: 10px;
+     cursor: pointer;
+     z-index: 10;
+}
+
+.none {
+     display: none;
+}
+
+@media (max-width : 950px) {
+
+     .navbar img {
+          display: block;
+     }
+
+
+     .hide-ul {
+          opacity: 0;
+          display: none;
+          position: relative;
+          right: -100px;
+     }
+
+     .show-ul {
+          opacity: 1;
+          position: absolute;
+          right: -8%;
+          transition: opacity 0.5s ease-in-out;
+          list-style: none;
+          animation: sidebar 0.5s ease-in-out;
+     }
+
+     @keyframes sidebar {
+          0%{
+               opacity: 0;
+               right: -100px;
+          }
+          100% {
+               opacity: 1;
+               right: -8%;
+          }
+     }
+
+
+     .navbar .list {
+          position: absolute;
+          top: 0px;
+          right: -8%;
+          height: 100dvh;
+          width: 250px;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          margin-right: 7%;
+          background-color: rgb(26, 23, 23);
+          transition: display, opacity, position 0.3s ease-in-out;
+          opacity: 1;
+     }
+
+     .navbar .list li {
+          position: relative;
+          top: 50px;
+     }
+
+
+
+     .hide {
+          opacity: 0;
+          z-index: 0;
+     }
+
+     .show {
+          opacity: 1;
+          z-index: 1;
+     }
+
+     .navbar img {
+          display: block;
+     }
+
+
+     .temp-none {
+          display: none;
+     }
+
+     .hide-list {
+          display: none;
+     }
+
+     .navbar {
+          z-index: 5;
+     }
+
+}

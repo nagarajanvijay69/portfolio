@@ -1,0 +1,22 @@
+.app{
+  height: 100dvh;
+  width: 100dvw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.app .fixed{
+  position: fixed;
+  z-index: 1;
+}
+
+.home .about .projects .contact{
+  position: relative;
+  z-index: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}

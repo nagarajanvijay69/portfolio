@@ -1,0 +1,195 @@
+.about{
+     min-height: 100dvh;
+     width: 100dvw;
+     padding-top: 65px;
+     z-index: 1;
+}
+
+.about .flex{
+     display: flex;
+     gap: 20px;
+}
+
+.about-left, .about-right{
+     margin: 20px 20px;
+     width: 45%;
+}
+
+.about-head{
+     margin: 20px 0;
+     font-size: 35px;
+     width: 100%;
+     text-align: center;
+}
+
+.ani-about-head{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     font-size: 25px;
+     position: relative;
+     right: 10%;
+     margin: 10px 0;
+}
+
+.ani-about{
+     margin-left: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align:center;
+}
+
+.about-left-left, .about-left-right{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+}
+
+.ani-about-head span{
+     text-align: center;
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     position: relative;
+     left: 50px;
+}
+
+
+.skils-container img{
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     margin: 10px;
+     border: none;
+}
+
+.skils-container{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+}
+
+.skils-container div{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+}
+
+
+.about-right-head{
+     text-align: center;
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 25px;
+     margin: 20px 0;
+}
+
+
+.about .pro-link-1{
+     margin: 10px 10px;
+     padding: 8px 10px;
+     height: 100px;
+     width: 140px;
+     color: #fff;
+     font-size: 18px;
+     text-decoration: none;
+     background: linear-gradient(45deg, rgb(213, 9, 121), rgb(255, 106, 0));
+     border-radius: 8px;
+     position: relative;
+     top: 40px;
+     left: 30px;
+}
+
+.pro-link{
+     margin: 10px 10px;
+     padding: 6px 8px;
+     height: 100px;
+     width: 140px;
+     color: #fff;
+     font-size: 18px;
+     text-decoration: none;
+     border-radius: 8px;
+     position: relative;
+     top: 40px;
+     left: 30px;
+     border: 2px solid rgb(255, 255, 255);
+}
+
+
+@media (max-width : 1024px) {
+     .flex{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          right: 4%;
+     }
+
+     .about-left, .about-right{
+          width: 90%;
+     }
+
+     .skils-container{
+          position: relative;
+          left: 4%;
+          grid-template-columns: repeat(3, 1fr);
+     }
+
+     .about .pro-link-1{
+          left: 100px;
+     }
+
+     .about .pro-link{
+          left: 100px;
+     }
+
+     .ani-about-head span{
+          text-align: center;
+          margin-left: 17%;
+          font-size: 30px;
+     }
+
+     .about-right-head{
+          margin-left: 8%;
+          font-size: 30px;
+     }
+
+}
+
+@media (max-width : 450px) {
+     .ani-about-head span {
+          left: 5%;
+          font-size: 30px;
+     }
+
+     .about .pro-link-1, .about .pro-link{
+          left: 40px;
+     }
+}
+
+.skils-container div:hover{
+     transform: scale(1.1);
+     transition: all 0.3s ease-in-out;
+}
+
+.pro-link-1:hover{
+     background: linear-gradient(45deg, rgb(255, 106, 0), rgb(213, 9, 121));
+     color: #fff;
+     transition: all 0.3s ease-in-out;
+     transform: scale(1.1);
+
+}
+
+.pro-link:hover{
+     border-color: rgb(171, 163, 163);
+}
