@@ -46,7 +46,6 @@
      color: white;
      font-size: 15px;
      transition: transform 0.3s ease-in-out;
-     text-decoration: none;
 }
 
 .proj-div a:hover{
@@ -109,5 +108,11 @@
           position: relative;
           left: -2%;
           margin-top: 20px;
+     }
+}
+
+@media (max-width : 400px) {
+     .proj-div{
+          left: -2em;
      }
 }
