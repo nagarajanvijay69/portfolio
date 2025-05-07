@@ -15,3 +15,7 @@ html {
 .heading {
   font-family: 'dm serif display';
 }
+
+a{
+  text-decoration: none;
+}
