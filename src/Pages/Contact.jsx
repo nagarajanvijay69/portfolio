@@ -21,6 +21,10 @@ const Contact = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
+    setName("");
+    setEmail("");
+    setMessage("");
+
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -30,9 +34,7 @@ const Contact = () => {
       body: json
     }).then((res) => res.json());
 
-    setName("");
-    setEmail("");
-    setMessage("");
+    alert("Form Submitted Successfully!");
   };
 
   return <>
