@@ -8,12 +8,12 @@ const Contact = () => {
   const [Message, setMessage] = useState("");
 
   const onSubmit = async (event) => {
+    event.preventDefault();
     
     if (!Name.trim()|| !Email.trim() || !Message.trim()) {
       alert("Please fill all the fields");
       return;
     }
-    event.preventDefault();
     const formData = new FormData(event.target);
 
     formData.append("access_key", "028500d6-64b1-4cb7-815a-efcea1540594");
