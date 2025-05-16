@@ -11,6 +11,11 @@ const Projects = () => {
         <span>Itachi AI - Chat bot</span>
         <a href='https://itachi-ai-delta.vercel.app/' target='_blank'>Visit Now</a>
       </div>
+      <div className="one">
+        <img src="./loan.jpg" alt="Loan img" />
+        <span>Loan Management</span>
+        <a href='https://loan-proj-frontend.vercel.app' target='_blank'>Visit Now</a>
+      </div>
      </div>
   </div>
 </>
